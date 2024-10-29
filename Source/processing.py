@@ -27,7 +27,7 @@ def process_text(file_path):
     # Map products to common name
     data.replace({"Product": config.product_map}, inplace=True)
     # Select complaints as list
-    data=data[1:25000]
+    data=data[1:200000]
     complaints = list(data["Complaint"])
     # Convert to lower case
     print("Converting text to lower case...")
